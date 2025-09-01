@@ -12,6 +12,7 @@ public class StreamsStringVaidation {
     }
 
     static void stringValidation() {
+        //System.out.println(nonRepeatVal);
         Map<String, Long> val = Arrays.stream(name.split("")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         val.forEach((k, v) -> System.out.println(k + ":" + v));
         String nonRepeatVal = Arrays.stream(name.split("")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
