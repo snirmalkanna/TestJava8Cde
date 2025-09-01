@@ -18,6 +18,7 @@ public class StreamsStringVaidation {
                 .entrySet().stream().filter(x -> x.getValue() == 1)
                 .findFirst().get().getKey();
         System.out.println(nonRepeatVal);
+		System.out.println(nonRepeatVal);
     }
 
 
